@@ -5,7 +5,8 @@
   "description": "Tự động tua và dừng video YouTube để học từ vựng tiếng Anh.",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
   "action": {
     "default_popup": "popup.html",

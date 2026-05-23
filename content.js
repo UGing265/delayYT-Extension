@@ -6,9 +6,9 @@ let pauseDuration = 1000;
 function loop() {
     if (!isRunning) return;
     
-    const video = document.querySelector('video');
+    const video = document.querySelector('.html5-main-video');
     if (!video) {
-        console.error("YT Auto Pause: No video found!");
+        console.error("YT Auto Pause: No main video found!");
         return;
     }
 
@@ -46,7 +46,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         isRunning = false;
         clearTimeout(timeoutId);
         
-        const video = document.querySelector('video');
+        const video = document.querySelector('.html5-main-video');
         if (video) video.pause();
         
         console.log("YT Auto Pause: Stopped");
