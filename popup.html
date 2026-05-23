@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Auto Pause</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>YT Learner 🎓</h2>
+        <p class="subtitle">Auto Play & Pause</p>
+        
+        <div class="input-group">
+            <label for="playTime">Thời gian chạy (giây):</label>
+            <input type="number" id="playTime" value="5" min="1" step="0.5">
+        </div>
+        
+        <div class="input-group">
+            <label for="pauseTime">Thời gian dừng (giây):</label>
+            <input type="number" id="pauseTime" value="1" min="0.5" step="0.5">
+        </div>
+
+        <div class="status" id="statusText">Trạng thái: Đang tắt</div>
+
+        <div class="button-group">
+            <button id="startBtn" class="btn btn-primary">Bắt Đầu</button>
+            <button id="stopBtn" class="btn btn-danger">Dừng</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

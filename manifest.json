@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YT Auto Pause Learner",
+  "version": "1.0",
+  "description": "Tự động tua và dừng video YouTube để học từ vựng tiếng Anh.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YT Auto Pause Learner"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch*"],
+      "js": ["content.js"]
+    }
+  ]
+}
